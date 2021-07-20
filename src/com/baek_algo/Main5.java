@@ -1,37 +1,24 @@
 package com.baek_algo;
-
-
-
 import java.io.*;
+import java.util.*;
 
-
-public class Main5 {
-
-	public static void main(String[] args) throws NumberFormatException, IOException {
-		
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));		
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));  
-        int[] intArray = new int[10];
-        int[] remainderArray= new int[42];
-        for(int i=0; i<10;i++) {
-            intArray[i]= Integer.parseInt(bf.readLine()); 
-            remainderArray[(intArray[i]%42)]++;
-        } // 숫자 저장
+public class Main5{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringBuilder[] numArr = {new StringBuilder(st.nextToken()), new StringBuilder(st.nextToken())};
         
-        int diffCount = 0;
-         for(int i=0; i<42;i++) {
-             if(!(remainderArray[i] == 0)) {
-                 diffCount++;
-             }
-         }    
-		
-       
-        bw.write(diffCount + "\n");
-        bf.close();
-        bw.flush();
-		bw.close();   
         
-     
-	}
-
+        for(int i=0; i<2;i++) {
+            numArr[i].reverse();
+        }
+        int result = 0;
+        
+        if (Integer.parseInt(numArr[0].toString()) > Integer.parseInt(numArr[1].toString())) {
+            result = Integer.parseInt(numArr[0].toString());
+        } else {
+            result = Integer.parseInt(numArr[1].toString());
+        }
+        System.out.println(result);
+    }
 }
