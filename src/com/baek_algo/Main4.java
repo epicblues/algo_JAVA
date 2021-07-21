@@ -14,6 +14,7 @@ public class Main4 {
 		int[] intArCopy = new int[9];
 		for (int i = 0; i < 9; i++) {
 			intAr[i] = Integer.parseInt(bf.readLine());
+			
 		}
 
 		for (int i = 0; i < 9; i++) {

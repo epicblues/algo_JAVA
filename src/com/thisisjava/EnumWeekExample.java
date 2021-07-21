@@ -9,8 +9,10 @@ public class EnumWeekExample {
 		Week today = null;
 		
 		
-		
+	
 		Calendar cal = Calendar.getInstance();
+		Calendar cal2 = Calendar.getInstance();
+		System.out.println(cal == cal2);
 		int week = cal.get(Calendar.DAY_OF_WEEK);
 		
 		switch(week) {

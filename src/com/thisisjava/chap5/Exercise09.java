@@ -1,10 +1,12 @@
-package com.thisisjava;
+package com.thisisjava.chap5;
 
 import java.util.Scanner;
+import com.thisisjava.Week;
 
-public class Exercise9 {
+public class Exercise09 {
 
 	public static void main(String[] args) {
+		Week[] days = Week.values();
 		boolean run = true;
 		int studentNum = 0;
 		int[] scores = null;

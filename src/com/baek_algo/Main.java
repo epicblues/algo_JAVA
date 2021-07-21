@@ -3,7 +3,7 @@ package com.baek_algo;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Main {
+ class Main {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();  // ' ' = 32
@@ -13,6 +13,8 @@ public class Main {
                 countWord++;
             }
         }
+        
+        
        
         System.out.println(countWord);
         
