@@ -2,6 +2,8 @@ package com.thisisjava.chap7;
 
 public class Car {
 	
+	
+	
 	Tire[] tires = {
 			new Tire("앞왼쪽",6),
 			new Tire("앞오른쪽",2),

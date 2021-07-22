@@ -2,6 +2,8 @@ package com.thisisjava.chap7;
 
 public class KumhoTire extends Tire{
 
+	
+	
 	public KumhoTire(String location, int maxRotation) {
 		super(location, maxRotation);
 		
