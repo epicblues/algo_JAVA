@@ -16,7 +16,7 @@ public class BankApplication {
 			System.out.print("선택>");
 			
 			int selectNo = scan.nextInt();
-			
+			try {
 			switch (selectNo) {
 				case 1:
 					createAccount();
@@ -25,6 +25,7 @@ public class BankApplication {
 					accountList();
 					break;
 				case 3:
+					
 					deposit();
 					break;
 				case 4:
@@ -36,7 +37,9 @@ public class BankApplication {
 				default:
 					System.out.println("잘못 입력하셨습니다.");
 			}
-			
+			} catch (NullPointerException e) {
+				System.err.println(e + " 발생!\n다시 하세요!");
+			}
 			
 		}
 		System.out.println("프로그램 종료");
@@ -110,7 +113,7 @@ public class BankApplication {
 		
 	}
 	
-	private static Account findAccount(String ano) {
+	private static Account findAccount(String ano) throws NullPointerException {
 		for(int i = 0; i<accountArray.length;i++) {
 			if(accountArray[i].getAno().equals(ano)) {
 				return accountArray[i];
