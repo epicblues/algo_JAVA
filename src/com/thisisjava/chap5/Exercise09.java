@@ -6,7 +6,7 @@ import com.thisisjava.Week;
 public class Exercise09 {
 
 	public static void main(String[] args) {
-		Week[] days = Week.values();
+		
 		boolean run = true;
 		int studentNum = 0;
 		int[] scores = null;
