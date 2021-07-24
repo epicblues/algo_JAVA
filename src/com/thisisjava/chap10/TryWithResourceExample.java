@@ -7,6 +7,7 @@ public class TryWithResourceExample {
 			fis.read();
 		fis.close();
 		
+		
 	}
 
 }
