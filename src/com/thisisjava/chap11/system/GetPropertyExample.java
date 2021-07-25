@@ -26,5 +26,8 @@ public class GetPropertyExample {
 		
 		String path = System.getenv("JAVA_HOME");
 		System.out.println(path);
+	
+		
+		
 	}
 }
