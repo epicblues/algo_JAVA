@@ -25,6 +25,11 @@ public class SearchExample {
 		index = Arrays.binarySearch(members, new Member("홍길동"));
 		System.out.println("찾은 인덱스 : " + index);
 		
+		Integer obj = Integer.valueOf("1000");
+		System.out.println(obj);
+		int changedObj = obj.intValue();
+		System.out.println(changedObj);
+		
 		
 
 	}
