@@ -15,6 +15,11 @@ public class KeyExample {
 		String value = hashMap.get(new Key(1));
 		System.out.println(value);
 		
+		hashMap.put(new Key(1), "김선수");
+		System.out.println(hashMap.get(new Key(1)));
+		
+		
+		
 	}
 	
 
