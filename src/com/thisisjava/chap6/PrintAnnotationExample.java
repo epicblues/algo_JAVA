@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 
 public class PrintAnnotationExample {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SecurityException, ClassNotFoundException {
 		//Service 클래스로부터 메소드 정보를 얻음
 		Method[] declaredMethods = Service.class.getDeclaredMethods();
 		

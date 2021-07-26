@@ -17,7 +17,7 @@ public class GetPropertyExample {
 		System.out.println("----------------------------------------");
 		
 		Properties props = System.getProperties();
-		Set keys = props.keySet();
+		Set<Object> keys = props.keySet();
 		for (Object objKey : keys) {
 			String key = (String)objKey;
 			String value = System.getProperty(key);
