@@ -1,6 +1,6 @@
 package com.thisisjava.chap6;
 
-@PrintAnnotation
+
 public class Service {
 	@PrintAnnotation
 	public void method1() {
