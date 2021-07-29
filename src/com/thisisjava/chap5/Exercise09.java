@@ -1,7 +1,8 @@
 package com.thisisjava.chap5;
 
 import java.util.Scanner;
-import com.thisisjava.Week;
+
+import com.thisisjava.etc.Week;
 
 public class Exercise09 {
 

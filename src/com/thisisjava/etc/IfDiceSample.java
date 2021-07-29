@@ -1,4 +1,4 @@
-package com.thisisjava;
+package com.thisisjava.etc;
 
 import java.util.Scanner;
 
