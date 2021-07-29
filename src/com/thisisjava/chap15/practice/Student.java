@@ -1,6 +1,12 @@
 package com.thisisjava.chap15.practice;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public int studentNum;
 	public String name;
 	public Student(int studentNum, String name) {
@@ -21,4 +27,11 @@ public class Student {
 		}
 		return super.equals(obj);
 	}
+
+	@Override
+	public String toString() {
+		return "Student [studentNum=" + studentNum + ", name=" + name + "]";
+	}
+	
+	
 }
