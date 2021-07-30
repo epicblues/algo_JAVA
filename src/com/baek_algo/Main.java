@@ -1,22 +1,27 @@
 package com.baek_algo;
 
+import java.util.*;
 import java.io.*;
-import java.util.StringTokenizer;
 
- class Main {
+public class Main{
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();  // ' ' = 32
-        int countWord = 0;
-        for(int i = 1; i < str.length(); i++) {
-            if(str.charAt(i) == 32) {
-                countWord++;
+        int inputNum = Integer.parseInt(br.readLine());
+        int count = 0;
+        for (int j=0; j<inputNum;j++) {
+            HashSet<Character> set = new HashSet<>();
+            String inputStr = br.readLine();
+            if (inputStr.length() == 1) break;
+            for(int i =0; i<inputStr.length();i++) {
+                if(!(set.add(Character.valueOf(inputStr.charAt(i))))) {
+                    count++;
+                    break;
+                }
             }
         }
+         System.out.println(count);
+        }
+      
         
-        
-       
-        System.out.println(countWord);
         
     }
-}
