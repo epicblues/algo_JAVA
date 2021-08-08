@@ -10,13 +10,15 @@ public class Jdbc1 {
 		String dburl = "jdbc:oracle:thin:@localhost:1521:xe";
 		Connection conn = DriverManager.getConnection(dburl, "hr","hr");
 		Statement stmt = conn.createStatement();
-		ResultSet rs = stmt.executeQuery("SELECT * from tabs");
+		ResultSet rs = stmt.executeQuery("SELECT * from USER_TAB_COLUMNS where TABLE_NAME = \'EMPLOYEES\'");
 		while(rs.next()) {
-			System.out.println(rs.getString(1));
+			
+			System.out.println(rs.getString(2));
 		}
 		rs.close();
 		stmt.close();
 		conn.close();
+		
 		
 	}
 
