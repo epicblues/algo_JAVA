@@ -17,9 +17,10 @@ public class JdbcSelect {
 		ResultSet rs = null;
 		
 		try {
+			
 			System.out.print("SQL문을 입력해주세요! >>> ");
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-			conn = DriverManager.getConnection(dburl,"c##kmsbabo","1234");
+			conn = DriverManager.getConnection(dburl,"hr","hr");
 			String query = br.readLine();
 			
 			pst = conn.prepareStatement(query); 
@@ -46,6 +47,8 @@ public class JdbcSelect {
 			rs.close();
 			pst.close();
 			conn.close();
+			System.out.println("================");
+			System.out.println("프로그램 종료");
 		}
 		
 		
