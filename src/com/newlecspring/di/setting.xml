@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- Bean이라느 태그를 통해서 생성을 지시한다. -->
+	<bean id="exam" class="com.newlecspring.ImplementedClass"></bean>
+	<bean id="console" class="com.newlecspring.DependencyInjection">
+		<!-- console.setExam(exam); -->
+		<!-- 해당 클래스가 setExam함수를 갖고 있어야 한다. -->
+	</bean>
+	<bean id="baka" class="java.lang.String">
+	
+	</bean>
+	
+	<bean id="board" class="com.thisisjava.chap15.practice.Board"
+		autowire="constructor">
+		<constructor-arg>
+	<list>
+		
+	</list>
+		</constructor-arg>
+	</bean>
+	<!-- 어떠한 class를 사용할래? 그리고 그것을 어떤 변수명 id로 사용할래? -->
+
+
+
+</beans>
