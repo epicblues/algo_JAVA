@@ -21,6 +21,31 @@ public class Program {
 		System.out.print(" C : ");
 		C.printPoly();
 		
+		
+		SparseMatrix spm = new SparseMatrix(7,4);
+		spm.setValue(new MatrixValue(0,3,9));
+		spm.setValue(new MatrixValue(1,1,1));
+		spm.setValue(new MatrixValue(3,2,7));
+		spm.setValue(new MatrixValue(5,0,3));
+		
+		
+		
+		
+		
+		SparseMatrixOperator operator = new SparseMatrixOperator(spm);
+		SparseMatrix spm2 = operator.transposeSM();
+		
+		printMatrix(spm);
+		printMatrix(spm2);
 	}
 
+	private static void printMatrix(SparseMatrix spm) {
+		int[][] matrix = spm.getMatrix();
+		for(int i = 0; i < spm.getMatrixRow(); i++) {
+			for(int j = 0; j < spm.getMatrixCol(); j++) {
+				System.out.print(matrix[i][j] + "/");
+			}
+			System.out.println();
+		}
+	}
 }
