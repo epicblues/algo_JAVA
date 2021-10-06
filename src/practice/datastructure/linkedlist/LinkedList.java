@@ -98,14 +98,14 @@ public class LinkedList {
 		beforeTemp.link = null;
 		
 		while(temp!=null) {
-			ListNode afterTemp = temp.link;
+			ListNode afterTemp = temp.link; // 현재 temp 노드의 주소 값을 임시 저장.
 			
 			temp.link = beforeTemp;
 			beforeTemp = temp;
 			temp = afterTemp;
 			
 		}
-		head = beforeTemp; 
+		head = beforeTemp; // 마지막 노드의 주소를 시작점으로 삼는다.
 		
 
 	}
