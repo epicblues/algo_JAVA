@@ -1,9 +1,9 @@
 package practice.datastructure.stack;
 
-public interface Stack{
+public interface Stack<T>{
 	boolean isEmpty();
-	void push(char item);
-	char pop();
+	void push(T item);
+	T pop();
 	void delete();
-	char peek();
+	T peek();
 }
