@@ -23,18 +23,33 @@ public class Program {
 //		System.out.println();
 
 		
-		BinarySearchTree<String> bst = new BinarySearchTree<String>();
-		bst.insertBST("baka");
-		bst.insertBST("pizzamaur");
-		bst.insertBST("baku");
+//		BinarySearchTree<String> bst = new BinarySearchTree<String>();
+//		bst.insertBST("baka");
+//		bst.insertBST("pizzamaur");
+//		bst.insertBST("baku");
+//		
+//		bst.printBST();
+//		bst.insertBST("bakav");
+//		bst.insertBST("pizzamaurz");
+//		bst.insertBST("bakud");
+//		bst.printBST();
+//		
+//		System.out.println("Searching : "  + bst.searchBST("bakav").data);
 		
-		bst.printBST();
-		bst.insertBST("bakav");
-		bst.insertBST("pizzamaurz");
-		bst.insertBST("bakud");
-		bst.printBST();
-		
-		System.out.println("Searching : "  + bst.searchBST("bakav").data);
+		Heap<String> heap = new Heap<String>();
+		heap.insertHeap("hello");
+		heap.insertHeap("helloa");
+		heap.insertHeap("hellob");
+		heap.insertHeap("helloc");
+		heap.insertHeap("hellod");
+		heap.insertHeap("helloe");
+		heap.insertHeap("hellof");
+		heap.insertHeap("hellog");
+		heap.printHeap();
+		heap.deleteHeap();
+		heap.printHeap();
+		heap.deleteHeap();
+		heap.printHeap();
 	}
 
 }
