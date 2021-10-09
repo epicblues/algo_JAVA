@@ -16,22 +16,36 @@ public class Program {
 //		matrix.insertEdge(2, 4);
 //		matrix.printMatrix();
 		
-		AdjList list = new AdjList();
-		list.insertVertex(0);
-		list.insertVertex(0);
-		list.insertVertex(0);
-		list.insertVertex(0);
-		list.insertVertex(0);
-		list.insertEdge(0, 3);
-		list.insertEdge(0, 1);
-		list.insertEdge(1, 3);
-		list.insertEdge(1, 2);
-		list.insertEdge(2, 3);
-		list.insertEdge(2, 1);
-		list.insertEdge(3, 2);
-		list.insertEdge(3, 1);
-		list.insertEdge(3, 0);
+//		AdjList list = new AdjList();
+//		list.insertVertex(0);
+//		list.insertVertex(0);
+//		list.insertVertex(0);
+//		list.insertVertex(0);
+//		list.insertVertex(0);
+//		list.insertEdge(0, 3);
+//		list.insertEdge(0, 1);
+//		list.insertEdge(1, 3);
+//		list.insertEdge(1, 2);
+//		list.insertEdge(2, 3);
+//		list.insertEdge(2, 1);
+//		list.insertEdge(3, 4);
+//		list.insertEdge(3, 1);
+//		list.insertEdge(3, 0);
+//		
+//		list.BFS(0);
+		AdjMatrix matrix = new AdjMatrix();
+		matrix.insertVertex(0);
+		matrix.insertVertex(0);
+		matrix.insertVertex(0);
+		matrix.insertVertex(0);
+		matrix.insertEdge(0, 3);
+		matrix.insertEdge(0, 2);
+		matrix.insertEdge(1, 0);
+		matrix.insertEdge(2, 1);
+		matrix.insertEdge(3, 1);
+		matrix.printMatrix();
 		
-		list.printAdjList();
+		
+		
 	}
 }
