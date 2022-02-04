@@ -6,9 +6,10 @@ import org.springframework.util.comparator.ComparableComparator;
 
 public class BinarySearchTree<T extends Comparable<T>> {
 	private TreeNode<T> root;
-	Comparator<T> comparator = new ComparableComparator<T>();
+	private final Comparator<T> comparator = new ComparableComparator<T>();
 
 	public TreeNode<T> insertKey(TreeNode<T> root, T key) {
+
 		TreeNode<T> p = root;
 		
 		if (p == null) {

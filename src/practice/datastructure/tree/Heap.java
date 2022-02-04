@@ -1,22 +1,25 @@
 package practice.datastructure.tree;
 
+import java.lang.reflect.Array;
 import java.util.Comparator;
 
 import org.springframework.util.comparator.ComparableComparator;
 
 public class Heap<T extends Comparable<T>> {
+
 	Comparator<T> comparator = new ComparableComparator<T>();
 
 	private int heapSize;
-	private T[] itemHeap;
+	private final T[] itemHeap;
 
 	public Heap() {
 		heapSize = 0;
-		itemHeap =  (T[])new Object[50];
+		itemHeap = (T[]) new Object[50];
 
 	}
 
-	public void insertHeap(T item) { // 최대 힙
+	public void insertHeap(T item) {
+		// 최대 힙
 		int i = ++heapSize;
 		while ((i != 1) && (comparator.compare(item, itemHeap[i / 2])) > 0) {
 			itemHeap[i] = itemHeap[i / 2];
@@ -44,6 +47,7 @@ public class Heap<T extends Comparable<T>> {
 				child++;
 			}
 			if(comparator.compare(temp,itemHeap[child]) >= 0) break;
+			// 이 빈 공간에는 temp 가 그 둘보다 부모로 들어가야 한다(두 자식이 temp 보다 우선순위가 낮으므로)
 			itemHeap[parent] = itemHeap[child];
 			
 			parent = child;
@@ -54,7 +58,7 @@ public class Heap<T extends Comparable<T>> {
 	}
 	
 	public void printHeap() {
-		System.out.printf("\nHeap >>>");
+		System.out.print("\nHeap >>>");
 		for(int i = 1; i <= heapSize; i++) {
 			System.out.printf("[%s]  ", itemHeap[i]);
 		}
