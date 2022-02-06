@@ -32,6 +32,7 @@ class PhoneBook {
 
     public boolean insert(String num) {
         char[] chars = num.toCharArray();
+
         PhoneBook[] nextBuffer = buffer;
         for(int i = 0; i < chars.length;i++) {
             char c = chars[i];
