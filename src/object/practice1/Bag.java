@@ -1,4 +1,4 @@
-package object.practice;
+package object.practice1;
 
 public class Bag {
     private Long amount;

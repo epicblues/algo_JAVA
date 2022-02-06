@@ -1,4 +1,4 @@
-package object.practice;
+package object.practice1;
 
 public class Audience {
     private Bag bag;
