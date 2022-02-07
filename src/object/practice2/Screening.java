@@ -14,6 +14,8 @@ public class Screening {
 
     }
 
+    // Screening이 갖는 책임
+    // 영화를 예매하라!
     public Reservation reserve(Customer customer, int audienceCount) {
 
         return new Reservation(customer, this, calculateFee(audienceCount), audienceCount);
@@ -23,7 +25,7 @@ public class Screening {
         return whenScreened;
     }
 
-    public int calculateFee(int audienceCount) {
+    public Money calculateFee(int audienceCount) {
         // Screening이 movie의 calculateMovieFee '메시지를 전송한다'
         return movie.calculateMovieFee(this).times(audienceCount);
     }
