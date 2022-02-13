@@ -3,27 +3,27 @@ package object.practice10;
 import object.practice2.Money;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public abstract class Phone {
+    // 합성
+    // 런타임 의존성
+    // 어떤 ratePolicy 클래스랑 협력할지는 아무도 모른다.
+    private RatePolicy ratePolicy;
     protected List<Call> calls= new ArrayList<>();
-    private double taxRate;
 
-    public Phone(double taxRate) {
-        this.taxRate = taxRate;
+    // 의존성 주입
+    public  Phone(RatePolicy ratePolicy) {
+        this.ratePolicy = ratePolicy;
     }
+
 
     public Money calculateFee() {
-        Money result =Money.ZERO;
-        for(Call call : calls) {
-            result = result.plus(calculateCallFee(call));
-        }
-        return result.plus(result.times(taxRate));
+        return ratePolicy.calculateFee(this);
     }
 
-    // 유일하게 수정이 열려 있는 부분
-    // 새로운 요금제가 필요하면 이 부분만 구현하면 된다.
-    // 상속된 클래스들이 이 추상화에 의존한다.
-    abstract protected Money calculateCallFee(Call call);
-
+    public List<Call> getCalls() {
+        return Collections.unmodifiableList(calls);
+    }
 }
