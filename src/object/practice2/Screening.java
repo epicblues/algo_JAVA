@@ -1,5 +1,7 @@
 package object.practice2;
 
+import object.practice3.Customer;
+
 import java.time.LocalDateTime;
 
 public class Screening {

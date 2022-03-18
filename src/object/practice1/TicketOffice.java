@@ -8,7 +8,7 @@ public class TicketOffice {
     private List<Ticket> tickets = new ArrayList<>();
     private Long amount;
 
-    public TicketOffice(Long amount, Ticket ... tickets) {
+    public TicketOffice(Long amount, Ticket... tickets) {
         this.amount = amount;
         this.tickets.addAll(Arrays.asList(tickets));
     }

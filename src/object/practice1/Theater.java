@@ -6,6 +6,7 @@ public class Theater {
     public Theater(TicketSeller ticketSeller) {
         this.ticketSeller = ticketSeller;
     }
+
     // Theater의 유일한 책임
     // 관람객을 입장시키는 것
     public void enter(Audience audience) {

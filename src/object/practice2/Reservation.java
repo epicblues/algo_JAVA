@@ -1,15 +1,18 @@
 package object.practice2;
 
-public class Reservation {
-    private Customer customer;
-    private Screening screening;
-    private Money fee;
-    private int audienceCount;
+import object.practice3.Customer;
 
-    public Reservation(Customer customer, Screening screening, Money fee, int audienceCount) {
-        this.customer  = customer;
-        this.screening = screening;
-        this.fee = fee;
-        this.audienceCount=audienceCount;
-    }
+public class Reservation {
+
+  private Customer customer;
+  private Screening screening;
+  private Money fee;
+  private int audienceCount;
+
+  public Reservation(Customer customer, Screening screening, Money fee, int audienceCount) {
+    this.customer = customer;
+    this.screening = screening;
+    this.fee = fee;
+    this.audienceCount = audienceCount;
+  }
 }
