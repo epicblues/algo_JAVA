@@ -3,7 +3,6 @@ package com.baek_algo;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.List;
 import java.util.Set;
 import java.util.Stack;
 
@@ -11,8 +10,6 @@ public class Problem_1918 {
 
 
   public static void main(String[] args) throws IOException {
-
-    List<String> testCase = List.of("A*(B+C)", "A+B", "A+B*C");
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
