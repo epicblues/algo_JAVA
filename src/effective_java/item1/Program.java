@@ -12,5 +12,9 @@ public class Program {
       System.out.println(dw.getValue());
     }
 
+    StaticInterfaceClass.factoryMethod().run();
+
+    Date date = new Date(999, 4444);
+    assert false;
   }
 }
