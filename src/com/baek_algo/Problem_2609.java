@@ -17,7 +17,6 @@ public class Problem_2609 {
 		int LCM = getLCM(target[0], target[1]);
 
 		System.out.println(GCM + "\n" + LCM);
-
 	}
 
 	private static int getLCM(int n1, int n2) {
@@ -33,7 +32,6 @@ public class Problem_2609 {
 
 			a++;
 		}
-
 		return n1 * a;
 
 	}
