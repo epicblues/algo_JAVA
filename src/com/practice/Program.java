@@ -1,6 +1,7 @@
 package com.practice;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.stream.IntStream;
 
 public class Program {
 
@@ -13,5 +14,9 @@ public class Program {
     } catch (Exception e) {
       e.printStackTrace();
     }
+
+    IntStream a = IntStream.range(1, 101);
+    a.forEach(System.out::println);
+
   }
 }
