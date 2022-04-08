@@ -3,13 +3,21 @@ package com.baek_algo;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Problem_1966 {
+
+  private int num = 0;
+  private Set<Integer> set = new HashSet<Integer>() {{
+    add(3);
+    add(Problem_1966.this.num);
+  }};
 
   public static void main(String[] args) throws IOException {
 
@@ -64,6 +72,7 @@ public class Problem_1966 {
 
     return 1;
   }
+
 
 }
 
