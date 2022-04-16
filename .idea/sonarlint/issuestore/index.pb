@@ -35,3 +35,9 @@ T
 $src/com/baek_algo/Problem_10845.java,a\6\a692e81626139a807af2f0070804c2726a6de0b7
 S
 #src/com/baek_algo/Problem_2164.java,d\4\d47977cd9df5a65b7ebbc72e01502f1c43a6f617
+S
+#src/com/baek_algo/Problem_1874.java,c\1\c1277d968e219ab560abdc9a57442c3a650a4550
+S
+#src/com/baek_algo/Problem_1935.java,1\2\125ac035d4bab24466cb8366cee233c265ff8864
+U
+%src/effective_java/item1/Varargs.java,8\5\853c91cc458c1b774d21ca9307ea40b41a339185
