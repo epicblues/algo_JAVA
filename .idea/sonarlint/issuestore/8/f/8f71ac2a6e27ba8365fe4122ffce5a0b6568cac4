@@ -1,0 +1,7 @@
+
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ò†äıÿÿÿÿ
+f
+java:S1206"PThis class overrides "hashCode()" and should therefore also override "equals()".(ğÜşŠ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ğæ°úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(µ¾‰…üÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ùÄûšşÿÿÿÿ
