@@ -1,4 +1,4 @@
-
+.idea
 # Created by https://www.toptal.com/developers/gitignore/api/maven,eclipse
 # Edit at https://www.toptal.com/developers/gitignore?templates=maven,eclipse
 
@@ -89,3 +89,15 @@ buildNumber.properties
 .classpath
 
 # End of https://www.toptal.com/developers/gitignore/api/maven,eclipse
+/.idea/libraries/
+/.idea/sonarlint/
+/.idea/.gitignore
+/.idea/compiler.xml
+/.idea/description.html
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/project-template.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml

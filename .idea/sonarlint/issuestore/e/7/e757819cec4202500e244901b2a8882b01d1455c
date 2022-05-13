@@ -1,7 +1,0 @@
-
-Z
-java:S2095"DUse try-with-resources or close this "Stream" in a "finally" clause.(°ùÓŠ
-M
-java:S3958"2Refactor the code so this stream pipeline is used.(ò‚”¾úÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(‡¿¡³ûÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(º“†Û
