@@ -9,7 +9,6 @@ public class Program1_1 {
 
     System.out.println(isDuplicatedChar("hello"));
     System.out.println(isDuplicatedChar("bakf"));
-
   }
 
   private static boolean isDuplicatedChar(String str) {
@@ -24,6 +23,5 @@ public class Program1_1 {
     }
     return false;
   }
-  
 
 }
